@@ -3,7 +3,8 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "start": "node ./bin/www"
+    "start": "node app",
+    "test": "mocha -R spec test"
   },
   "dependencies": {
     "ejs": "^2.2.4",
@@ -11,7 +12,10 @@
   },
   "description": "my first webpage with node.js",
   "main": "app.js",
-  "devDependencies": {},
+  "devDependencies": {
+    "mocha": "*",
+    "jslint": "*"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/kevinptt0323/test-nodejs"
